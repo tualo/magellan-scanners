@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+var fs = require('fs'),
+    program = require('commander'),
+    pjson = require('../package.json'),
+    path =  require('path'),
+    main =  require(path.join('..','lib','main'));
+
+var exdendedHelp = function(){
+    var examples = [];
+    examples.push( '');
+    console.log(examples.join("\n"));
+}
+
+program
+    .version(pjson.version)
+    .description('magellan')
+    .usage('[options]')
+    .option('--read','read from device')
+    .on('--help', exdendedHelp)
+    .parse(process.argv);
+
+if (program.read){
+  var magellan = new main.Magellan();
+  magellan.read(function(d){
+    console.log(d);
+  });
+  //magellan.image();
+}else{
+  program.help();
+}

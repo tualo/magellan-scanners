@@ -1,0 +1,38 @@
+{
+  "name": "magellan",
+  "description": "USB-COM Module for Datalogic Magellan Scanners",
+  "homepage": "https://github.com/tualo/magellan",
+  "main": "lib/main.js",
+  "bin": {
+    "sorter": "./bin/magellan"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "keywords": [
+    "sorter"
+  ],
+  "author": [
+    {
+      "name": "Thomas Hoffmann",
+      "email": "thomas.hoffmann@tualo.de",
+      "url": "http://tualo.de/"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Thomas Hoffmann",
+      "email": "thomas.hoffmann@tualo.de",
+      "url": "http://tualo.de/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tualo/magellan.git"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "commander": "*"
+  }
+}
