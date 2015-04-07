@@ -1,5 +1,5 @@
 {
-  "name": "magellan",
+  "name": "magellan-scanners",
   "description": "USB-COM Module for Datalogic Magellan Scanners",
   "homepage": "https://github.com/tualo/magellan",
   "main": "lib/main.js",
